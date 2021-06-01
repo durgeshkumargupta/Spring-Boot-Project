@@ -65,7 +65,27 @@ public class SpringBootJpaExampleApplication {
 			System.out.println("Sorry Data is not there on your Database ");
 		}
 		*/
+		
+		//fetch all the data with the help of name
+//		List<User> usr=userRepository.findByName("Durgesh");
+//		usr.forEach(user->System.out.println(user));
+		
+		//fetch all data those are belong to BCA background
+//		List<User> usr=userRepository.findByCourse("BCA");
+//		usr.forEach(user->System.out.println(user));
+		
+		//Get All Data
+//		List<User> allUser=userRepository.getAllUser();
+//		allUser.forEach(e->System.out.println(e));
+		
+//		List<User> user=userRepository.getUserByName("durgesh");
+//		user.forEach(e->System.out.println(e));
+		
+//		List<User> user=userRepository.getUserByNameWithCourse("Durgesh","BCA");
+//		user.forEach(e->System.out.println(e));
+		
+		List<User> user=userRepository.getUser();
+		user.forEach(e->System.out.println(e));
 	}
 
 }
-
