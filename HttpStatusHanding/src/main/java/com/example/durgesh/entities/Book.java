@@ -7,16 +7,16 @@ public class Book implements  Serializable
 {
 	private static final long serialVersionUID = 2668617337790812162L;
 	private Integer id;
-	private String tiltle;
+	private String title;
 	private String author;
 	
 	public Book() {
 	}
 	
-	public Book(Integer id, String tiltle, String author) {
+	public Book(Integer id, String title, String author) {
 		super();
 		this.id = id;
-		this.tiltle = tiltle;
+		this.title = title;
 		this.author = author;
 	}
 
@@ -27,10 +27,10 @@ public class Book implements  Serializable
 		this.id = id;
 	}
 	public String getTiltle() {
-		return tiltle;
+		return title;
 	}
 	public void setTiltle(String tiltle) {
-		this.tiltle = tiltle;
+		this.title = tiltle;
 	}
 	public String getAuthor() {
 		return author;
@@ -44,7 +44,7 @@ public class Book implements  Serializable
 
 	@Override
 	public String toString() {
-		return "Book [id=" + id + ", tiltle=" + tiltle + ", author=" + author + "]";
+		return "Book [id=" + id + ", title=" + title + ", author=" + author + "]";
 	}
 	
 	
