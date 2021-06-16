@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>service page</title>
+</head>
+<body>
+	<h1 >This page is service Provided page</h1>
+	<p>______________________________________Insert________________________________________________</p>
+	<!-- Insert -->
+	<footer id="hostTag" th:insert="footer::footer1">
+	</footer>
+	
+	<p>_______________________________________replace_______________________________________________</p>
+	<!-- replace -->
+	<footer id="hostTag" th:replace="footer::footer1">
+	</footer>
+	
+	<p>________________________________________include______________________________________________</p>
+	<!-- include -->
+	<footer id="hostTag" th:include="footer::footer1">
+	</footer>
+	
+	<p>__________Dynamic Data send in footer_____________________________________________</p>
+	<!-- Dynamic Data send in footer -->
+	<footer id="hostTag" th:replace="footer::footer2(${title},${subtitle})">
+	</footer>
+
+</body>
+</html>

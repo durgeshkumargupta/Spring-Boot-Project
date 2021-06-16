@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>service page</title>
+</head>
+<body>
+	<h1 >This page is service 2 Provided page</h1>
+	
+	<p>__________Dynamic Data send in footer_____________________________________________</p>
+	<!-- Dynamic Data send in footer -->
+	<footer id="hostTag" th:replace="footer::footer2(${title},${subtitle})">
+	</footer>
+
+</body>
+</html>

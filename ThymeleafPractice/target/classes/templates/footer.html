@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Footer Template</title>
+</head>
+<body>
+
+	<!-- Static Data send in footer -->
+	<footer id="fragmentTag" th:fragment="footer1">
+		<div class="contanier">
+			<h1>About Spring Boot with Durgesh</h1>
+			<p>Spring is widely used for creating scalable applications. For web applications Spring provides
+				Spring MVC which is a widely used module of spring which is used to create scalable web applications.</p>
+			
+		</div>
+	
+	</footer>
+	
+	<!-- Dynamic Data send in footer -->
+	<footer id="fragmentTag" th:fragment="footer2(title,subtitle)">
+		<div class="contanier2">
+			<h1 th:text="${title}"></h1>
+			<h2 th:text="${subtitle}"></h2>
+			<h1>About Spring Boot with Durgesh</h1>
+			<p>Spring is widely used for creating scalable applications. For web applications Spring provides
+				Spring MVC which is a widely used module of spring which is used to create scalable web applications.</p>
+			
+		</div>
+	
+	</footer>
+	
+</body>
+</html>
