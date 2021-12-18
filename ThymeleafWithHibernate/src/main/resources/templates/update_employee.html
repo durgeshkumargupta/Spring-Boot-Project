@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"s>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Employee</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+</head>
+<body>
+	<div  class="container">
+	<div align="center" >
+		<h1>Employee Management System</h1>
+		<hr>
+		<h2>Update Employee</h2>
+	</div>
+
+		<form action="#" th:action="@{/saveEmployee}" th:object="${employee}"
+			method="POST">
+			
+			<div>
+				<input type="hidden" th:field="*{id}">
+			</div>
+			<div>
+				<label> First Name</label> <input class="form-control mb-4 col-4" th:field="*{firstName}"
+					placeholder="Enter First Name">
+			</div>
+			<div>
+				<label> Last Name</label> <input class="form-control  mb-4 col-4" th:field="*{lastName}"
+					placeholder="Enter Last Name">
+			</div>
+			<div>
+				<label> Email</label> <input class="form-control  mb-4 col-4" th:field="*{email}"
+					placeholder="Enter Email Address">
+			</div>
+			<button type="submit" class="btn btn-primary">Update Employee</button>
+		</form>
+		
+		<a th:href="@{/}">Back to Employee</a>
+
+	</div>
+	
+
+</body>
+</html>
