@@ -15,7 +15,7 @@ import com.durgesh.service.EmployeeService;
 public class EmployeeController 
 {
 	@Autowired
-	EmployeeService employeeService;
+	private EmployeeService employeeService;
 	
 	//display list of employee
 	@GetMapping("/")
