@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Update</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div align="center">
+			<h1>Student Details</h1>
+			<hr>
+			<h2>Update Student</h2>
+		</div>
+
+		<div>
+			<form action="#" th:action="@{/saveStudent}" th:object="${student}"
+				method="post">
+
+				<div>
+					<input class="form-control mb-4 col-4" th:field="*{id}"
+						type="hidden">
+				</div>
+
+				<div>
+					<label>Enter USN</label> <input class="form-control mb-4 col-4"
+						th:field="*{usn}" placeholder="Enter USN">
+				</div>
+				<div>
+					<label>Enter Name</label> <input class="form-control mb-4 col-4"
+						th:field="*{name}" placeholder="Enter Name">
+				</div>
+				<div>
+					<label>Enter College Name</label> <input
+						class="form-control mb-4 col-4" th:field="*{college_name}"
+						placeholder="Enter College Name">
+				</div>
+				<div>
+					<label>Enter Department</label> <input
+						class="form-control mb-4 col-4" th:field="*{department}"
+						placeholder="Enter Department">
+				</div>
+				<div>
+					<label>Enter Address</label> <input class="form-control mb-4 col-4"
+						th:field="*{address}" placeholder="Enter Address">
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+				<a th:href="@{/}" class="btn btn-primary">Back</a>
+			</form>
+		</div>
+		</div>
+</body>
+</html>
