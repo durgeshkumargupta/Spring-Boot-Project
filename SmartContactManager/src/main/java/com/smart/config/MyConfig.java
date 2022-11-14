@@ -54,12 +54,5 @@ public class MyConfig extends WebSecurityConfigurerAdapter
 		.loginProcessingUrl("/dologin")
 		.defaultSuccessUrl("/user/index")
 		.and().csrf().disable();
-	}
-	
-	
-	
-	
-	
-	
-	
+	}	
 }
