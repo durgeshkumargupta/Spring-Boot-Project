@@ -59,7 +59,4 @@ public class Book implements  Serializable
 	public String toString() {
 		return "Book [id=" + id + ", tiltle=" + tiltle + ", author=" + author + "]";
 	}
-	
-	
-
 }
